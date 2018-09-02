@@ -29,6 +29,7 @@ var app = new Vue({
                     let results = response.body.results
                     results.shift()
                     self.apps = self.apps.concat(results)
+                    console.log(self.apps.length)
                     self.apps.sort(function(a, b){
                         var dateA = new Date(a.currentVersionReleaseDate)
                         var dateB = new Date(b.currentVersionReleaseDate)
