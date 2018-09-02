@@ -7,18 +7,14 @@ var app = new Vue({
 
     created: function() {
         this.fetchData()
-        console.log(authors)
     },
 
     methods: {
         fetchData: function() {
             this.authors.forEach(author => {
-                var xhr = new XMLHttpRequest()
                 var self = this
-                xhr.open('GET', "https://itunes.apple.com/lookup?id=" + author.artistId + "&entity=software&lang=zh-CN&country=CN")
-                xhr.setRequestHeader("Access-Control-Allow-Origin", "*")
-                xhr.onload = function() {
-                    let results = JSON.parse(xhr.responseText).results
+                this.$http.jsonp("https://itunes.apple.com/lookup?id=" + author.artistId + "&entity=software&lang=zh-CN&country=CN").then(response => {
+                    let results = response.body.results
                     results.shift()
                     self.apps = self.apps.concat(results)
                     self.apps.sort(function(a, b){
@@ -32,8 +28,7 @@ var app = new Vue({
                         }
                         return 0
                     })
-                }
-                xhr.send()
+                })
             });
         },
         timeAgo: function(dateString) {
