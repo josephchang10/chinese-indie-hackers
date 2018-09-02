@@ -16,6 +16,7 @@ var app = new Vue({
                 var xhr = new XMLHttpRequest()
                 var self = this
                 xhr.open('GET', "https://itunes.apple.com/lookup?id=" + author.artistId + "&entity=software&lang=zh-CN&country=CN")
+                xhr.setRequestHeader("Access-Control-Allow-Origin", "*")
                 xhr.onload = function() {
                     let results = JSON.parse(xhr.responseText).results
                     results.shift()
