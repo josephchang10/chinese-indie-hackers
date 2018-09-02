@@ -21,13 +21,14 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6" v-for="item in apps">
                         <div class="card mb-4 shadow-sm">
-                            <img class="card-img-top" v-bind:src="item.artworkUrl512">
                             <div class="card-body">
-                                <h5 class="card-title">{{ item.trackName }}</h5>
-                                <p class="card-text" style="display: -webkit-box; -webkit-line-clamp: 2; overflow: hidden; -webkit-box-orient: vertical;"><small class="text-muted">{{ item.description }}</small></p>
+                                <div class="d-flex justify-content-between align-self-center mb-3">
+                                    <h5 class="card-title">{{ item.trackName }}</h5>
+                                    <img class="rounded shadow-sm ml-1" v-bind:src="item.artworkUrl100" style="width: 50px; height: 50px;">
+                                </div>
+                                <p class="card-text" style="display: -webkit-box; -webkit-line-clamp: 3; overflow: hidden; -webkit-box-orient: vertical;"><small class="text-muted">{{ item.description }}</small></p>
                                 <div class="d-flex justify-content-between">
                                         <small class="text-muted">{{ timeAgo(item.currentVersionReleaseDate) }}</small>
-                                    
                                 </div>
                             </div>
                             <div class="card-footer">
