@@ -31,7 +31,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="d-flex justify-content-between">
-                                        <a href="#" class="btn-info btn">{{ "@" + authors.find(author => author.artistId == item.artistId).name }}</small></a>
+                                    <a v-bind:href="authors.find(author => author.artistId == item.artistId) | getContact" class="btn-info btn" target="_blank">{{ "@" + authors.find(author => author.artistId == item.artistId).name }}</small></a>
                                     <a v-bind:href="item.trackViewUrl" class="btn btn-secondary float-right" target="_blank">{{ (item.kind === "mac-software" ? "macOS" : "iOS") + " " + item.version }}</a>
                                 </div>
                             </div>

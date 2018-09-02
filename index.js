@@ -9,6 +9,18 @@ var app = new Vue({
         this.fetchData()
     },
 
+    filters: {
+        getContact: function(author) {
+            if (author.weibo != null) {
+                return author.weibo
+            } else if (author.github != null) {
+                return author.github
+            } else {
+                return author.website
+            }
+        }
+    },
+
     methods: {
         fetchData: function() {
             this.authors.forEach(author => {
