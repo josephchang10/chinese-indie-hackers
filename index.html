@@ -54,6 +54,7 @@
                                 <p v-if="item.releaseNotes" class="card-text" style="display: -webkit-box; -webkit-line-clamp: 1; overflow: hidden; -webkit-box-orient: vertical;"><small class="text-muted">更新：{{ item.releaseNotes }}</small></p>
                                 <div class="d-flex justify-content-between">
                                         <small class="text-muted">{{ timeAgo(item.currentVersionReleaseDate) }}</small>
+                                        <span class="badge badge-primary" v-if="isNewlyLaunched(item)">新上架</span>
                                 </div>
                             </div>
                             <div class="card-footer">

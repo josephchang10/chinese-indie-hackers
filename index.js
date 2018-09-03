@@ -46,6 +46,9 @@ var app = new Vue({
         },
         timeAgo: function(dateString) {
             return moment(dateString).fromNow()
+        },
+        isNewlyLaunched: function(item) {
+            return (moment().diff(moment(item.releaseDate), 'days') <= 30)
         }
     }
 });
