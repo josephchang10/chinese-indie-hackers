@@ -417,5 +417,10 @@ var authors = [
         "name": "wfg西游",
         "artistId": "911248237",
         "weibo": "https://weibo.com/wangfanggen"
+    },
+    {
+        "name": "磨叽日常",
+        "artistId": "1415283695",
+        "weibo": "https://weibo.com/3923448215"
     }
 ]
