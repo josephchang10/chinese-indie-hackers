@@ -412,5 +412,10 @@ var authors = [
         "name": "Naituw",
         "artistId": "789066515",
         "weibo": "https://weibo.com/u/1774390367"
+    },
+    {
+        "name": "wfg西游",
+        "artistId": "911248237",
+        "weibo": "https://weibo.com/wangfanggen"
     }
 ]
