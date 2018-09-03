@@ -402,5 +402,10 @@ var authors = [
         "artistId": "1196789570",
         "weibo": "https://weibo.com/u/1421881187",
         "github": "https://github.com/thisfin"
+    },
+    {
+        "name": "__eternity__",
+        "artistId": "477700083",
+        "weibo": "https://weibo.com/u/1652421612"
     }
 ]
