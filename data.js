@@ -457,5 +457,10 @@ var authors = [
         "name": "陈怀哲",
         "artistId": "1217365131",
         "weibo": "https://www.weibo.com/windboy2010"
+    },
+    {
+        "name": "HumanBait",
+        "artistId": "1310569777",
+        "weibo": "https://weibo.com/u/5785570641"
     }
 ]
