@@ -407,5 +407,10 @@ var authors = [
         "name": "__eternity__",
         "artistId": "477700083",
         "weibo": "https://weibo.com/u/1652421612"
+    },
+    {
+        "name": "Naituw",
+        "artistId": "789066515",
+        "weibo": "https://weibo.com/u/1774390367"
     }
 ]
