@@ -378,7 +378,7 @@ var authors = [
         "weibo": "https:\/\/weibo.com\/u\/1714354562"
     },
     {
-        "name": "Yves3",
+        "name": "oulvhai",
         "artistId": "954188947",
         "weibo": "https:\/\/weibo.com\/u\/2352150534"
     },
