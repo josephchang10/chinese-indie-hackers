@@ -422,5 +422,25 @@ var authors = [
         "name": "磨叽日常",
         "artistId": "1415283695",
         "weibo": "https://weibo.com/3923448215"
+    },
+    {
+        "name": "AcenQiu",
+        "artistId": "565952149",
+        "weibo": "https://weibo.com/acenqiu"
+    },
+    {
+        "name": "爱尔兰_雪",
+        "artistId": "1229241758",
+        "weibo": "https://weibo.com/erinsnowanmin"
+    },
+    {
+        "name": "冰霜海胆",
+        "artistId": "1158790572",
+        "weibo": "https://weibo.com/2065134695"
+    },
+    {
+        "name": "Igotit",
+        "artistId": "476610032",
+        "weibo": "https://weibo.com/igotit"
     }
 ]
