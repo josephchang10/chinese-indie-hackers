@@ -392,5 +392,9 @@ var authors = [
         "name": "超能刚哥",
         "artistId": "1380585947",
         "weibo": "https://weibo.com/u/1726667734"
+    },
+    {
+        "name": "Pinlin Xu",
+        "artistId": "1419006544"
     }
 ]
