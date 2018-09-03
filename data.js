@@ -396,5 +396,11 @@ var authors = [
     {
         "name": "Pinlin Xu",
         "artistId": "1419006544"
+    },
+    {
+        "name": "Fin_文优",
+        "artistId": "1196789570",
+        "weibo": "https://weibo.com/u/1421881187",
+        "github": "https://github.com/thisfin"
     }
 ]
