@@ -387,5 +387,10 @@ var authors = [
         "artistId": "1132845873",
         "weibo": "https:\/\/weibo.com\/u\/1894983214",
         "website": "https:\/\/jinkey.ai"
+    },
+    {
+        "name": "超能刚哥",
+        "artistId": "1380585947",
+        "weibo": "https://weibo.com/u/1726667734"
     }
 ]
