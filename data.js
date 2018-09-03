@@ -442,5 +442,15 @@ var authors = [
         "name": "Igotit",
         "artistId": "476610032",
         "weibo": "https://weibo.com/igotit"
+    },
+    {
+        "name": "-碱式碳酸铜-",
+        "artistId": "1214241424",
+        "weibo": "https://weibo.com/liuhengyu007"
+    },
+    {
+        "name": "纹森里",
+        "artistId": "1358070871",
+        "weibo": "https://www.weibo.com/lianlunvincent"
     }
 ]
