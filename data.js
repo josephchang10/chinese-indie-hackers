@@ -452,5 +452,10 @@ var authors = [
         "name": "纹森里",
         "artistId": "1358070871",
         "weibo": "https://www.weibo.com/lianlunvincent"
+    },
+    {
+        "name": "陈怀哲",
+        "artistId": "1217365131",
+        "weibo": "https://www.weibo.com/windboy2010"
     }
 ]
