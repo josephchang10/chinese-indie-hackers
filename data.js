@@ -462,5 +462,10 @@ var authors = [
         "name": "肥小强",
         "artistId": "732817663",
         "weibo": "https://weibo.com/u/1697125254"
+    },
+    {
+        "name": "BEAST丨Q",
+        "artistId": "1273586564",
+        "weibo": "https://weibo.com/u/2149670764"
     }
 ]
