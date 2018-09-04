@@ -464,8 +464,8 @@ var authors = [
         "weibo": "https://weibo.com/u/1697125254"
     },
     {
-        "name": "BEAST丨Q",
+        "name": "BqLin",
         "artistId": "1273586564",
-        "weibo": "https://weibo.com/u/2149670764"
+        "weibo": "https://github.com/bqlin"
     }
 ]
