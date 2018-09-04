@@ -457,5 +457,10 @@ var authors = [
         "name": "HumanBait",
         "artistId": "1310569777",
         "weibo": "https://weibo.com/u/5785570641"
+    },
+    {
+        "name": "肥小强",
+        "artistId": "732817663",
+        "weibo": "https://weibo.com/u/1697125254"
     }
 ]
