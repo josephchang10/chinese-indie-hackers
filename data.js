@@ -467,5 +467,10 @@ var authors = [
         "name": "BqLin",
         "artistId": "1273586564",
         "weibo": "https://github.com/bqlin"
+    },
+    {
+        "name": "iClock开发者",
+        "artistId": "1036699285",
+        "weibo": "https://weibo.com/u/1653674040"
     }
 ]
