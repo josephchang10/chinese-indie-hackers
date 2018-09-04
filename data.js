@@ -10,11 +10,6 @@ var authors = [
         "weibo": "https:\/\/weibo.com\/u\/1765732340"
     },
     {
-        "name": "im61",
-        "artistId": "784494589",
-        "weibo": "https:\/\/weibo.com\/u\/1734549517"
-    },
-    {
         "name": "KyXu",
         "artistId": "988271193",
         "weibo": "https:\/\/weibo.com\/u\/3559103571"
