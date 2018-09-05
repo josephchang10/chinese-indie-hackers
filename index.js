@@ -2,7 +2,8 @@ var app = new Vue({
     el: '#app',
     data: {
         apps: [],
-        authors: authors
+        authors: authors,
+        selectedAuthor: null
     },
 
     created: function() {
@@ -49,6 +50,26 @@ var app = new Vue({
         },
         isNewlyLaunched: function(item) {
             return (moment().diff(moment(item.releaseDate), 'days') <= 30)
+        },
+        getAuthorAverageRate: function(author) {
+            var totalRate = 0
+            var totalNumber = 0
+            this.apps.filter(app => app.artistId == author.artistId).forEach(function (app, index, array){
+                if (app.userRatingCount && app.averageUserRating) {
+                    totalRate += app.userRatingCount * app.averageUserRating
+                    totalNumber += app.userRatingCount
+                }
+            })
+            return (totalRate/totalNumber).toFixed(2)
+        },
+        getAuthorRatesNumber: function(author) {
+            var totalNumber = 0
+            this.apps.filter(app => app.artistId == author.artistId).forEach(function (app, index, array){
+                if (app.userRatingCount) {
+                    totalNumber += app.userRatingCount
+                }
+            })
+            return totalNumber
         }
     }
 });

@@ -21,6 +21,43 @@
     </head>
     <body>
         <div id="app">
+            <div class="modal fade" id="authorModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content" v-if="selectedAuthor">
+                        <div class="modal-header d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="modal-title">{{ selectedAuthor.name }}</h5><span class="badge badge-pill badge-warning">{{ getAuthorAverageRate(selectedAuthor) }}星</span><small><span class="text-muted ml-1">共{{apps.filter(app => app.artistId == selectedAuthor.artistId).length}}款作品 收到{{ getAuthorRatesNumber(selectedAuthor) }}条评分</span></small>
+                            </div>
+                            <div>
+                                <a target="_blank" class="btn btn-danger" v-if="selectedAuthor.weibo" v-bind:href="selectedAuthor.weibo">微博</a>
+                                <a target="_blank" class="btn btn-primary" v-if="selectedAuthor.github" v-bind:href="selectedAuthor.github">GitHub</a>
+                                <a target="_blank" class="btn btn-success" v-if="selectedAuthor.website" v-bind:href="selectedAuthor.website">网站</a>
+                            </div>
+                        </div>
+                        <div class="modal-body" v-if="selectedAuthor">
+                            <ul class="list-group">
+                                <li class="list-group-item" v-for="app in apps.filter(app => app.artistId == selectedAuthor.artistId)">
+                                    <div class="row">
+                                        <div class="col-2 align-self-center text-center"><img v-bind:src="app.artworkUrl100" style="width: 32px; height: 32px;" class="rounded shadow-sm"></div>
+                                        <div class="col-10">
+                                            <div>
+                                                <strong><a v-bind:href="app.trackViewUrl" target="_blank" class="text-dark" style="display: -webkit-box; -webkit-line-clamp: 1; overflow: hidden; -webkit-box-orient: vertical;">{{ app.trackName }}</a></strong>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <small class="text-muted" v-if="app.userRatingCount">{{app.userRatingCount}}条评价</small>
+                                                    <span class="badge badge-pill badge-warning" v-if="app.averageUserRating">{{ app.averageUserRating }}星</span>
+                                                </div>
+                                                <small class="text-muted">{{timeAgo(app.currentVersionReleaseDate)}}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="collapse bg-dark" id="navbarHeader">
                 <div class="container p-4">
                     <div class="row">
@@ -73,7 +110,8 @@
                             </div>
                             <div class="card-footer">
                                 <div class="d-flex justify-content-between">
-                                    <a v-bind:href="authors.find(author => author.artistId == item.artistId) | getContact" class="btn-info btn" target="_blank">{{ "@" + authors.find(author => author.artistId == item.artistId).name }}</small></a>
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#authorModal" v-on:click="selectedAuthor = authors.find(author => author.artistId == item.artistId)">{{ "@" + authors.find(author => author.artistId == item.artistId).name }}</button>
+                                    <!-- <a v-bind:href="authors.find(author => author.artistId == item.artistId) | getContact" class="btn-info btn" target="_blank">{{ "@" + authors.find(author => author.artistId == item.artistId).name }}</small></a> -->
                                     <a v-bind:href="item.trackViewUrl" class="btn btn-secondary float-right" target="_blank">{{ (item.kind === "mac-software" ? "macOS" : "iOS") + " " + item.version }}</a>
                                 </div>
                             </div>
