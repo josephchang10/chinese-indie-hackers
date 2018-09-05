@@ -482,5 +482,10 @@ var authors = [
         "name": "晓晓磊92",
         "artistId": "1082254622",
         "weibo": "https://weibo.com/zhuxiaolei19921229"
+    },
+    {
+        "name": "整理猫儿",
+        "artistId": "1294350323",
+        "weibo": "https://www.weibo.com/hldhi"
     }
 ]
