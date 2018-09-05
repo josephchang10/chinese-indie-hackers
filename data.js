@@ -477,5 +477,10 @@ var authors = [
         "name": "半人马alpha星老王",
         "artistId": "897814551",
         "weibo": "https://weibo.com/u/3216034701"
+    },
+    {
+        "name": "晓晓磊92",
+        "artistId": "1082254622",
+        "weibo": "https://weibo.com/zhuxiaolei19921229"
     }
 ]
