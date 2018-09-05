@@ -472,5 +472,10 @@ var authors = [
         "name": "iClock开发者",
         "artistId": "1036699285",
         "weibo": "https://weibo.com/u/1653674040"
+    },
+    {
+        "name": "半人马alpha星老王",
+        "artistId": "897814551",
+        "weibo": "https://weibo.com/u/3216034701"
     }
 ]
