@@ -152,7 +152,8 @@ var authors = [
     {
         "name": "miliPolo",
         "artistId": "1106354714",
-        "github": "https:\/\/github.com\/miliPolo"
+        "github": "https:\/\/github.com\/miliPolo",
+        "weibo": "https://weibo.com/u/6554948144"
     },
     {
         "name": "enzo-yang",
