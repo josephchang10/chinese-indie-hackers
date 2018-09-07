@@ -503,5 +503,10 @@ var authors = [
         "name": "Megabits_mzq",
         "artistId": "1052803981",
         "weibo": "https://weibo.com/u/6569549519"
+    },
+    {
+        "name": "鸡肉草人",
+        "artistId": "960344572",
+        "weibo": "https://weibo.com/u/1516628632"
     }
 ]
