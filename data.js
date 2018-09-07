@@ -498,5 +498,10 @@ var authors = [
         "name": "HanG",
         "artistId": "1106886288",
         "weibo": "https://weibo.com/u/5729698185"
+    },
+    {
+        "name": "Megabits_mzq",
+        "artistId": "1052803981",
+        "weibo": "https://weibo.com/u/6569549519"
     }
 ]
