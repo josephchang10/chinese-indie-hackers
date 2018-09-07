@@ -27,8 +27,9 @@ var app = new Vue({
             this.authors.forEach(author => {
                 var self = this
                 this.$http.jsonp("https://itunes.apple.com/lookup?id=" + author.artistId + "&entity=software&lang=zh-CN&country=CN").then(response => {
-                    let results = response.body.results
+                    var results = response.body.results
                     results.shift()
+                    results = results.filter(app => app.artistId == author.artistId)
                     self.apps = self.apps.concat(results)
                     console.log(self.apps.length)
                     self.apps.sort(function(a, b){
