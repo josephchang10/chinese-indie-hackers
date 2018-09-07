@@ -3,7 +3,8 @@ var app = new Vue({
     data: {
         apps: [],
         authors: authors,
-        selectedAuthor: null
+        selectedAuthor: null,
+        loadedAuthorNumber: 0
     },
 
     created: function() {
@@ -32,17 +33,20 @@ var app = new Vue({
                     results = results.filter(app => app.artistId == author.artistId)
                     self.apps = self.apps.concat(results)
                     console.log(self.apps.length)
-                    self.apps.sort(function(a, b){
-                        var dateA = new Date(a.currentVersionReleaseDate)
-                        var dateB = new Date(b.currentVersionReleaseDate)
-                        if (dateA < dateB) {
-                            return 1
-                        }
-                        if (dateA > dateB) {
-                            return -1
-                        }
-                        return 0
-                    })
+                    this.loadedAuthorNumber++
+                    if (this.loadedAuthorNumber === this.authors.length) {
+                        self.apps.sort(function(a, b){
+                            var dateA = new Date(a.currentVersionReleaseDate)
+                            var dateB = new Date(b.currentVersionReleaseDate)
+                            if (dateA < dateB) {
+                                return 1
+                            }
+                            if (dateA > dateB) {
+                                return -1
+                            }
+                            return 0
+                        })
+                    }
                 })
             });
         },
