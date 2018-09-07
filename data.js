@@ -488,10 +488,5 @@ var authors = [
         "name": "整理猫儿",
         "artistId": "1294350323",
         "weibo": "https://www.weibo.com/hldhi"
-    },
-    {
-        "name": "Robin灬桑",
-        "artistId": "919152304",
-        "weibo": "https://weibo.com/u/2314991674"
     }
 ]
