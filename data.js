@@ -493,5 +493,10 @@ var authors = [
         "name": "Robin灬桑",
         "artistId": "919152304",
         "weibo": "https://weibo.com/u/2314991674"
+    },
+    {
+        "name": "HanG",
+        "artistId": "1106886288",
+        "weibo": "https://weibo.com/u/5729698185"
     }
 ]
