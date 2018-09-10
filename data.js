@@ -508,5 +508,10 @@ var authors = [
         "name": "鸡肉草人",
         "artistId": "960344572",
         "weibo": "https://weibo.com/u/1516628632"
+    },
+    {
+        "name": "PINKUBE",
+        "artistId": "1401236723",
+        "weibo": "https://weibo.com/ILIDF?refer_flag=1005055013_"
     }
 ]
