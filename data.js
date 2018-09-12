@@ -513,5 +513,11 @@ var authors = [
         "name": "PINKUBE",
         "artistId": "1401236723",
         "weibo": "https://weibo.com/ILIDF?refer_flag=1005055013_"
+    },
+    {
+        "name": "莫振华",
+        "artistId": "1018123102",
+        "weibo": "https://weibo.com/u/6279074646",
+        "github": "https://github.com/mozhenhau"
     }
 ]
