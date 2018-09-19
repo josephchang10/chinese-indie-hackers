@@ -519,5 +519,10 @@ var authors = [
         "artistId": "1018123102",
         "weibo": "https://weibo.com/u/6279074646",
         "github": "https://github.com/mozhenhau"
+    },
+    {
+        "name": "Mr__夏__",
+        "artistId": "1227407667",
+        "weibo": "https://weibo.com/u/3313095453"
     }
 ]
