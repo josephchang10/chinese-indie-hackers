@@ -524,5 +524,11 @@ var authors = [
         "name": "Mr__夏__",
         "artistId": "1227407667",
         "weibo": "https://weibo.com/u/3313095453"
+    },
+    {
+        "name": "伟恩SUN",
+        "artistId": "955058821",
+        "weibo": "https://weibo.com/u/2452175144",
+        "github": "https://github.com/sunjw"
     }
 ]
