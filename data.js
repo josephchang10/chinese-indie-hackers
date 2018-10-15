@@ -530,5 +530,10 @@ var authors = [
         "artistId": "955058821",
         "weibo": "https://weibo.com/u/2452175144",
         "github": "https://github.com/sunjw"
+    },
+    {
+        "name": "okjaketo",
+        "artistId": "1409990633",
+        "github": "https://github.com/okjaketo"
     }
 ]
