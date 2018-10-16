@@ -546,5 +546,12 @@ var authors = [
         "artistId": "1174254605",
         "weibo": "https://weibo.com/p/1005056534598704",
         "website": "http://wythe.farbox.com/"
+    },
+    {
+        "name": "xiangwangfeng",
+        "artistId": "1170984709",
+        "weibo": "https://weibo.com/epmao",
+        "github": "https://github.com/xiangwangfeng",
+        "website": "http://wythe.farbox.com/"
     }
 ]
