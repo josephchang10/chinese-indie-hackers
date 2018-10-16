@@ -540,5 +540,11 @@ var authors = [
         "name": "vulgur",
         "artistId": "1065436362",
         "github": "https://github.com/vulgur"
+    },
+    {
+        "name": "落叶",
+        "artistId": "1174254605",
+        "weibo": "https://weibo.com/p/1005056534598704",
+        "website": "http://wythe.farbox.com/"
     }
 ]
