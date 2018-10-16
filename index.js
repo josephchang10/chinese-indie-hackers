@@ -2,6 +2,7 @@ var app = new Vue({
     el: '#app',
     data: {
         apps: [],
+        newApps: [],
         authors: authors,
         selectedAuthor: null,
         loadedAuthorNumber: 0
@@ -32,6 +33,18 @@ var app = new Vue({
                     results.shift()
                     results = results.filter(app => app.artistId == author.artistId)
                     self.apps = self.apps.concat(results)
+                    self.newApps = self.newApps.concat(results.filter(app => moment().diff(moment(app.releaseDate), 'days') <= 30))
+                    self.newApps.sort(function(a, b){
+                        var dateA = new Date(a.releaseDate)
+                        var dateB = new Date(b.releaseDate)
+                        if (dateA < dateB) {
+                            return 1
+                        }
+                        if (dateA > dateB) {
+                            return -1
+                        }
+                        return 0
+                    })
                     console.log(self.apps.length)
                     this.loadedAuthorNumber++
                     if (this.loadedAuthorNumber === this.authors.length) {

@@ -93,6 +93,13 @@
                 </div>
             </section>
             <div class="container">
+                <div class="my-4 p-3 card shadow-sm">
+                    <h6 class="pb-2 mb-0">新产品</h6>
+                    <div class="media text-muted pt-3" v-for="item in newApps">
+                        <img v-bind:src="item.artworkUrl100" style="width: 32px; height: 32px;" class="mr-2 rounded">
+                        <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray"><a v-bind:href="item.trackViewUrl" target="_blank" class="text-secondary"><strong class="d-block text-gray-dark">{{ item.trackName }}</strong></a>{{ "@" + authors.find(author => author.artistId == item.artistId).name }}</p>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-sm-6 col-lg-4" v-for="item in apps">
                         <div class="card mb-4 shadow-sm">
