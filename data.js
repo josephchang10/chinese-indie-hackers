@@ -535,5 +535,10 @@ var authors = [
         "name": "okjaketo",
         "artistId": "1409990633",
         "github": "https://github.com/okjaketo"
+    },
+    {
+        "name": "vulgur",
+        "artistId": "1065436362",
+        "github": "https://github.com/vulgur"
     }
 ]
