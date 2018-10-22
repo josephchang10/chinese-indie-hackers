@@ -33,7 +33,7 @@ var app = new Vue({
                     results.shift()
                     results = results.filter(app => app.artistId == author.artistId)
                     self.apps = self.apps.concat(results)
-                    self.newApps = self.newApps.concat(results.filter(app => moment().diff(moment(app.releaseDate), 'days') <= 30))
+                    self.newApps = self.newApps.concat(results.filter(app => moment().diff(moment(app.releaseDate), 'days') <= 15))
                     self.newApps.sort(function(a, b){
                         var dateA = new Date(a.releaseDate)
                         var dateB = new Date(b.releaseDate)

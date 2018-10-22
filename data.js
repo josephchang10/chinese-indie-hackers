@@ -553,5 +553,11 @@ var authors = [
         "weibo": "https://weibo.com/epmao",
         "github": "https://github.com/xiangwangfeng",
         "website": "http://wythe.farbox.com/"
+    },
+    {
+        "name": "linsyorozuya",
+        "artistId": "1437463749",
+        "weibo": "http://weibo.cn/linsyorozuya",
+        "github": "https://github.com/linsyorozuya"
     }
 ]
