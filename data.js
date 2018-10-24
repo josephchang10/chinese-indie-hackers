@@ -382,6 +382,7 @@ var authors = [
         "name": "JinkeyAI",
         "artistId": "1132845873",
         "weibo": "https:\/\/weibo.com\/u\/1894983214",
+        "github": "https://github.com/Jinkeycode",
         "website": "https:\/\/jinkey.ai"
     },
     {
