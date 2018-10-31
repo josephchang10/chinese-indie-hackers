@@ -560,5 +560,12 @@ var authors = [
         "artistId": "1437463749",
         "weibo": "http://weibo.cn/linsyorozuya",
         "github": "https://github.com/linsyorozuya"
+    },
+    {
+        "name": "陈希",
+        "artistId": "1353019342",
+        "weibo": "https://weibo.com/u/5227295178",
+        "github": "https://github.com/northcity",
+        "website": "http://www.northcity.top"
     }
 ]
